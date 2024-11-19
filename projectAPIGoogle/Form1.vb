@@ -7,7 +7,7 @@ Public Class Form1
 
 
         Dim apiKey As String = "API-Key"
-        Dim searchEngineId As String = "Search Engine ID"
+        Dim searchEngineId As String = "Search-Engine-ID"
 
         ' Get search query from TextBox
         Dim query As String = txtSearch.Text
@@ -53,5 +53,7 @@ Public Class Form1
 
     End Sub
 
-
+    Private Sub lblClose_Click(sender As Object, e As EventArgs) Handles lblClose.Click
+        Me.Close()
+    End Sub
 End Class
